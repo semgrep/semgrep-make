@@ -1,0 +1,37 @@
+File: semgrep-grammars/src/tree-sitter-make/LICENSE
+Git repo name: tree-sitter-make
+Latest commit in repo: 03b0c47e1272b40f5dbaa9962a1783a32e55a4f4
+Last change in file:
+  commit 1c293d89fef067df606c7785e9785e663131fa0f
+  Author: Alexandre A. Muller <muller@outlook.com>
+  Date:   Fri Apr 16 19:56:42 2021 +0000
+  
+      Initial commit
+---
+File: semgrep-grammars/src/tree-sitter-make/grammar.js
+Git repo name: tree-sitter-make
+Latest commit in repo: 03b0c47e1272b40f5dbaa9962a1783a32e55a4f4
+Last change in file:
+  commit c8b7faa8b427785c7b6ca15ee324ed0ff7c7f1e8
+  Author: eyenseo <eyenseo@gmail.com>
+  Date:   Thu Dec 16 00:41:33 2021 +0100
+  
+      Fix conditionals not accepting string
+---
+File: semgrep-grammars/src/semgrep-make/grammar.js
+Git repo name: ocaml-tree-sitter-semgrep
+Latest commit in repo: 91adb8ce1edb24770b5ff71bc388f98279870479
+Last change in file:
+  commit 96fc57eae9e223cdebbc28fb69859555d035bf4f
+  Author: pad <pad@r2c.dev>
+  Date:   Tue Jul 18 19:06:28 2023 +0200
+  
+      Add tree-sitter-make
+      
+      This is actually a fork of tree-sitter-make because the original
+      author does not seem responsive. See
+      https://github.com/alemuller/tree-sitter-make/pull/19
+      
+      test plan:
+      ./test-lang make
+---
