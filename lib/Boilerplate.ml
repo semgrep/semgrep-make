@@ -1414,7 +1414,26 @@ and map_thing (env : env) (x : CST.thing) =
 let map_makefile (env : env) (xs : CST.makefile) =
   R.List (List.map (map_thing env) xs)
 
+let map_comment (env : env) (tok : CST.comment) =
+  (* comment *) token env tok
+
 let dump_tree root =
   map_makefile () root
-  |> Tree_sitter_run.Raw_tree.to_string
-  |> print_string
+  |> Tree_sitter_run.Raw_tree.to_channel stdout
+
+let map_extra (env : env) (x : CST.extra) =
+  match x with
+  | Comment (_loc, x) -> ("comment", "comment", map_comment env x)
+
+let dump_extras (extras : CST.extras) =
+  List.iter (fun extra ->
+    let ts_rule_name, ocaml_type_name, raw_tree = map_extra () extra in
+    let details =
+      if ocaml_type_name <> ts_rule_name then
+        Printf.sprintf " (OCaml type '%s')" ocaml_type_name
+      else
+        ""
+    in
+    Printf.printf "%s%s:\n" ts_rule_name details;
+    Tree_sitter_run.Raw_tree.to_channel stdout raw_tree
+  ) extras

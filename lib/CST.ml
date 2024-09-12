@@ -851,3 +851,7 @@ type static_pattern_rule (* inlined *) = (
   * target_pattern option
   * anon_choice_recipe_9acf1ce
 )
+
+type extra = Comment of Loc.t * comment
+
+type extras = extra list
