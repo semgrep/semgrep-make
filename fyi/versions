@@ -2,25 +2,25 @@ File: semgrep-grammars/src/tree-sitter-make/LICENSE
 Git repo name: tree-sitter-make
 Latest commit in repo: 5904dfb622a95a48f2be5cc17c6c9a70566b47ef
 Last change in file:
-  commit 1c293d89fef067df606c7785e9785e663131fa0f
-  Author: Alexandre A. Muller <muller@outlook.com>
-  Date:   Fri Apr 16 19:56:42 2021 +0000
+  commit 5904dfb622a95a48f2be5cc17c6c9a70566b47ef
+  Author: pad <pad@r2c.dev>
+  Date:   Wed Jul 19 14:12:14 2023 +0200
   
-      Initial commit
+      Warning about new default branch to use in this repo.
 ---
 File: semgrep-grammars/src/tree-sitter-make/grammar.js
 Git repo name: tree-sitter-make
 Latest commit in repo: 5904dfb622a95a48f2be5cc17c6c9a70566b47ef
 Last change in file:
-  commit c8b7faa8b427785c7b6ca15ee324ed0ff7c7f1e8
-  Author: eyenseo <eyenseo@gmail.com>
-  Date:   Thu Dec 16 00:41:33 2021 +0100
+  commit 5904dfb622a95a48f2be5cc17c6c9a70566b47ef
+  Author: pad <pad@r2c.dev>
+  Date:   Wed Jul 19 14:12:14 2023 +0200
   
-      Fix conditionals not accepting string
+      Warning about new default branch to use in this repo.
 ---
 File: semgrep-grammars/src/semgrep-make/grammar.js
 Git repo name: ocaml-tree-sitter-semgrep
-Latest commit in repo: 62c59803ce966ac00210b5ed8aa163a926f7eaad
+Latest commit in repo: dea26c1d0d5b007958b27d072c544f642af0af43
 Last change in file:
   commit 96fc57eae9e223cdebbc28fb69859555d035bf4f
   Author: pad <pad@r2c.dev>
